@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kasus"
+        android:tooltipText="kasus"
+        android:title="Data Kasus"
+        android:icon="@drawable/ic_list"
+        />
+    <item
+        android:id="@+id/rs_rujukan"
+        android:tooltipText="rumah sakit"
+        android:title="RS Rujukan"
+        android:icon="@drawable/ic_rs"
+        />
+</menu>

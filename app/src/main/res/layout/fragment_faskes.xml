@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.KasusFragment"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvnama2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEPTIA AFRI YENDA"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="12pt"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvnim2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="124190018"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnama2"
+            />
+
+        <TextView
+            android:id="@+id/tvcovid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kasus Covid-19 Jawa Barat"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnim2"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_faskes"
+            android:layout_below="@id/tvcovid2"
+            tools:listitem="@layout/item_faskes"
+            >
+        </androidx.recyclerview.widget.RecyclerView>/>
+    </RelativeLayout>
+
+</RelativeLayout>

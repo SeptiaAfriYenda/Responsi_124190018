@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.RSFragment">
+
+    <RelativeLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvnama1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEPTIA AFRI YENDA"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="12pt"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvnim1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="124190018"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnama1"
+            />
+
+        <TextView
+            android:id="@+id/tvcovid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kasus Covid-19 Jawa Barat"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnim1"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_data"
+            android:layout_below="@id/tvcovid1"
+            tools:listitem="@layout/item_list"
+            >
+        </androidx.recyclerview.widget.RecyclerView>/>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEPTIA AFRI YENDA"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="12pt"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="124190018"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnama"
+            />
+        <TextView
+            android:id="@+id/tvcovid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kasus Covid-19 Jawa Barat"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10pt"
+            android:layout_below="@id/tvnim"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_navbar"
+        android:layout_weight="0"
+        android:layout_gravity="bottom"
+        android:background="@color/design_default_color_primary_variant"
+        app:menu="@menu/item_menu"
+        app:itemTextColor="@color/white"
+        android:focusableInTouchMode="true">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>
